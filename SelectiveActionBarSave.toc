@@ -1,0 +1,7 @@
+## Interface: 70300
+## Author: Moossacre
+## Title: Selective Action Bar Save
+## Version: 0.1
+## Notes: Save/restore specific action bars. Very handy for multiple specs in Legion
+
+main.lua
