@@ -1,9 +1,9 @@
 ## Interface: 70300
 ## Author: Moossacre
-## Title:|cFFFF7D0ASelective Action Bar Save|r
+## Title:|cFFFF7D0AAction Bar Toolkit|r
 ## Version: 0.1
 ## Notes: Save/restore specific action bars. Very handy for multiple specs in Legion
-## SavedVariablesPerCharacter: SelectiveActionBarSaverDB
+## SavedVariablesPerCharacter: ActionBarToolKitDB
 ## DefaultState: enabled
 
 main.lua

@@ -1,11 +1,11 @@
 -- Slash Key Definitions
-SLASH_SABS1 = '/sabs'
+SLASH_ABTK1 = '/abtk'
 
-if ( SelectiveActionBarSaverDB == nil ) then
-	SelectiveActionBarSaverDB = {}
+if ( ActionBarToolKitDB == nil ) then
+	ActionBarToolKitDB = {}
 end
 
-function SlashCmdList.SABS(args, editBox)
+function SlashCmdList.ABTK(args, editBox)
 	local command, arg = args:match("^(%S*)%s*(.-)$")
 	if( command == 'save' ) then
 		save_bar(arg)
@@ -28,7 +28,7 @@ function save_bar(bar_number)
 			sub_type=sub_type,
 			sub_id=sub_id}
 		print(button .. ": " .. tostring(type) .. " - " .. tostring(id) .. " - " .. tostring(sub_type) .. " - " .. tostring(sub_id))
-		SelectiveActionBarSaverDB[button] = db
+		ActionBarToolKitDB[button] = db
 	end
 end
 
@@ -36,7 +36,7 @@ function load_bar(bar_number)
 	local first_button = bar_number * 12 - 11
 	for button = first_button, first_button + 11
 	do
-		button_data = SelectiveActionBarSaverDB[button] 
+		button_data = ActionBarToolKitDB[button] 
 		restore_button(button,button_data)
 	end
 end
